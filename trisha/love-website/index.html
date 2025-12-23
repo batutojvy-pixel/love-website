@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1 class="login-title">Hello My Love</h1>
+            <p class="magic-word-text">magic word love</p>
+            
+            <div class="password-form">
+                <input type="password" id="passwordInput" placeholder="enter the magic word, my love!" class="password-input">
+                <button id="enterBtn" class="enter-btn">Enter</button>
+            </div>
+            
+            <div id="errorMessage" class="error-message hidden">
+                Incorrect password. Please try again.
+            </div>
+        </div>
+    </div>
+
+    <!-- Love Question Modal (now acts as welcome modal) -->
+    <div id="loveQuestionModal" class="modal hidden">
+        <div class="flower-petals-container" id="questionModalFlowerPetalsContainer"></div>
+        <div class="modal-content">
+            <div class="flower-decoration"></div>
+            <div class="flower-decoration"></div>
+            <div class="flower-decoration"></div>
+            <div class="flower-decoration"></div>
+            <div class="flower-decoration"></div>
+            <div class="flower-decoration"></div>
+            <h2 class="modal-title">HELLO MY LOVE!</h2>
+            <p class="modal-message">I hope you like what I made</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

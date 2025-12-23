@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flower-petals-container" id="flowerPetalsContainer"></div>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1 class="dashboard-title">Our Love Story</h1>
+        </header>
+
+        <nav class="navigation">
+            <button class="nav-btn active" data-section="aki">AKI</button>
+            <button class="nav-btn" data-section="music">MUSIC</button>
+            <button class="nav-btn" data-section="gallery">GALLERY</button>
+            <button class="nav-btn" data-section="notes">NOTES</button>
+        </nav>
+
+        <main class="content-area">
+            <!-- AKI Section -->
+            <section id="aki" class="section active">
+                <h2 class="section-title">AKI</h2>
+                <div class="love-buttons">
+                    <button class="love-btn special clickable" id="loveYouTooBtn">I Love You My AKI!</button>
+                </div>
+                <div id="loveMessage" class="love-message hidden">
+                    Hi my girlfriend! I hope you enjoy the website that I made. I created it as a Christmas gift for you HEHEHE ingon sila, "forget love letters, we do websites now" maayo nalang naka sabay kos trend HAHAHA. Honestly, I failed on my first attempt sa paghimo. I lost motivation kadali, pero need lang diay ug focus maayo nalang on my second try, I was able to do it. Grabe gud akong kalipay ato, HEHEHE. Love, finishing this website made me realize how much I really wanted to do something special just for you. I made this website because you are very special to me. I never imagined that I would find a girl like you — someone so caring and loving. To be honest, you're different from anyone I've ever met before, and that's what makes you so special. I never expected that my first chat would turn into our love story. worth it kaayo akong pag first move kay parehas nata gikilig HAHA I thought you wouldn't notice me, or maybe imo lang ko i ignore. I even thought that once we met in person, your feelings might change, like you wouldn't be interested sa akoa. But you proved me wrong. Thank you love for accepting me for who I am. You didn't judge me instead, you loved me. I still remember the first time we met sa may crossing nga nag sakay ka ug motor, grabe kaayo maka-point sa finger murag dugay na kaayo ta nagkaila, HAHAHA. I thought everything would change sa imoha after seeing me in person. I was so shocked gud ato, and I can't explain what I felt at that moment. Sige lang kug smile ato while nag lakaw HAHAHA Just wanna tell you thank you for coming into my life. I wasn't looking for anything when I met you, I was just chatting you without expecting anything in return. I never expected to fall in love with you, but it happened, super gwapa man akong aki amo na inlove si jvy. I dont want a perfect relationship, but i need one that puts God first. I don't want to find other girls, because I already have a beautiful girlfriend and you are the one I want to keep forever. Forever yours, jvy 
+                </div>
+            </section>
+
+            <!-- MUSIC Section -->
+            <section id="music" class="section">
+                <h2 class="section-title">Songs That Remind Me of You</h2>
+                <div class="music-player">
+                    <div class="playlist">
+                        <div class="song-item active" data-song="Ed Sheeran - Photograph (Lyrics).mp3">
+                            <div class="song-info">
+                                <h4>Ed Sheeran - Photograph</h4>
+                                <p>A beautiful reminder of our captured moments</p>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="song-item" data-song="Ed Sheeran - Thinking out Loud (Lyrics).mp3">
+                            <div class="song-info">
+                                <h4>Ed Sheeran - Thinking Out Loud</h4>
+                                <p>Dancing with you through life's journey</p>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="song-item" data-song="Libu-Libong Buwan (Uuwian) - Kyle Raphael (Lyric Video).mp3">
+                            <div class="song-info">
+                                <h4>Libu-Libong Buwan - Kyle Raphael</h4>
+                                <p>Under countless moons with you</p>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="song-item" data-song="Samantha Ebert - Flowers (Lyrics).mp3">
+                            <div class="song-info">
+                                <h4>Samantha Ebert - Flowers</h4>
+                                <p>Like flowers, our love continues to bloom</p>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="song-item" data-song="Taylor Swift - Lover (Official Music Video).mp3">
+                            <div class="song-info">
+                                <h4>Taylor Swift - Lover</h4>
+                                <p>You're my lover, forever and always</p>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="player-controls">
+                        <audio id="audioPlayer"></audio>
+                        <div class="now-playing">
+                            <div class="track-info">
+                                <h3 id="currentSong">Select a song to play</h3>
+                                <p id="currentArtist"></p>
+                            </div>
+                            <div class="control-buttons">
+                                <button id="prevBtn" class="control-btn">⏮</button>
+                                <button id="playPauseBtn" class="control-btn">▶</button>
+                                <button id="nextBtn" class="control-btn">⏭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALLERY Section -->
+            <section id="gallery" class="section">
+                <h2 class="section-title">Our Precious Moments</h2>
+                <div class="gallery-grid">
+                    <!-- Gallery items will be dynamically populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- NOTES Section -->
+            <section id="notes" class="section">
+                <h2 class="section-title">Love Notes</h2>
+                <div class="notes-content">
+                    <div class="note">
+                        <p>Let this website remind you of me whenever you visit.</p>
+                    </div>
+                    <div class="note">
+                        <p>I hope your day is as amazing as you are.</p>
+                    </div>
+                    <div class="note">
+                        <p>I'm not interested in other girls, my angry bird is enough for me.</p>
+                    </div>
+                    <div class="note">
+                        <p>Don't forget to drink water, my love.</p>
+                    </div>
+                    <div class="note">
+                        <p>I'm proud of you always.</p>
+                    </div>
+                    <div class="note">
+                        <p>You make my world brighter just by being in it.</p>
+                    </div>
+                    <div class="note">
+                        <p>I love you more than words can say.</p>
+                    </div>
+                    <div class="note">
+                        <p>Your happiness is my priority.</p>
+                    </div>
+                    <div class="note">
+                        <p>I will never stop loving you.</p>
+                    </div>
+                    <div class="note">
+                        <p>You're my favorite notification.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
